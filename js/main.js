@@ -75,11 +75,12 @@ jQuery.noConflict();
 					intcompA = 1447;
 					break;				
 			}
-			if(compA.includes('hour')){
+			if(compA.includes('mile')){
+				intcompA = 5000;
+			} else if(compA.includes('hour')){
 				var r = /\d+/;
 				intcompA = 60*parseInt(compA.match(r))
-			}
-			if(compA.includes('minute')){
+			} else if(compA.includes('minute')){
 				var r = /\d+/;
 				intcompA = parseInt(compA.match(r))
 			}
@@ -109,11 +110,12 @@ jQuery.noConflict();
 					intcompB = 1447;
 					break;				
 			}
-			if(compB.includes('hour')){
+			if(compB.includes('mile')){
+				intcompB = 5000;
+			} else if(compB.includes('hour')){
 				var r = /\d+/;
 				intcompB = 60*parseInt(compB.match(r))
-			}
-			if(compB.includes('minute')){
+			} else if(compB.includes('minute')){
 				var r = /\d+/;
 				intcompB = parseInt(compB.match(r))
 			}
